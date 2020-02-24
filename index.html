@@ -32,29 +32,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-<!-- The following is what is used to create the function that relates the answers to whether or not the user has a cold or allergies-->
+<!-- The following is what is used to create the function that relates the answers to whether or not the user has a broken bone-->
 	<script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var broken_bone = 0;
+        var not_broken = 0;
 	
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function brokenAdd(){
+            broken_count = broken_count + 1;
 		
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function notAdd(){
+            not_count = not_count + 1;
 	
         }
-	var allergyPercent=0;
-	var coldPercent=0;
+	var brokenPercent=0;
+	var notPercent=0;
 	function results() {
-		var allergyPercent= allergy_count + "/6";
-		var coldPercent= cold_count + "/6";
+		var brokenPercent= broken_count + "/6";
+		var coldPercent= not_count + "/6";
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold=" + coldPercent;
+		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "%<br> Probability it is not broken =" + notPercent;
 	
 	}
 	</script>
