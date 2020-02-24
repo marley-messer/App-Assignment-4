@@ -85,11 +85,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Is your bone broken?</h1>
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have a broken bone. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -104,11 +104,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?.</p>  
+        <p>Are you in a strong amount of pain?.</p>  
 		
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> YES </a>
+		<a href="#two" onclick="brokenAdd();" class="w3-btn w3-black"> YES </a>
 		
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> NO </a>
+		<a href="#two" onclick="notAdd();" class="w3-btn w3-black"> NO </a>
 		
     	</div>
 	
@@ -123,11 +123,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Do you have a fever?.</p>
+	<p>Is the area swollen?.</p>
 		
-		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> YES </a>
+		<a href="#three" onclick="brokenAdd();" class="w3-btn w3-black"> YES </a>
 		
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> NO </a>
+		<a href="#three" onclick="notAdd();" class="w3-btn w3-black"> NO </a>
 																					
 	</div>
 	
@@ -142,11 +142,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Do you have a sour throat?.</p>
+	<p>Is the area discolored or bruised?.</p>
 		
-		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> YES </a>
+		<a href="#four" onclick="brokenAdd();" class="w3-btn w3-black"> YES </a>
 		
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> NO </a>
+		<a href="#four" onclick="notAdd();" class="w3-btn w3-black"> NO </a>
 		
 	</div>
 	
@@ -160,52 +160,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Are your symptoms seasonal or chronic?.</p>
+	<p>Can you move the hurt region?.</p>
 		
-		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> SEASONAL </a>
+		<a href="#five" onclick="notAdd();" class="w3-btn w3-black"> YES </a>
 		
-		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> CHRONIC </a>
-		
-	</div>
-	
-</div>
-	
-<!--This codes for quesion 5 and its answers, also correlates the clicked button with the function-->
-	
-<div class="page" id="five">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 5</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p>Is your face and/or eyes swollen?.</p>
-		
-		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> YES </a>
-		
-		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> NO </a>
+		<a href="#five" onclick="brokenAdd();" class="w3-btn w3-black"> NO </a>
 		
 	</div>
 	
 </div>
-
-<!--This codes for quesion 6 and its answers, also correlates the clicked button with the function-->
 	
-<div class="page" id="six">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 6</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p>Is your nose running?.</p>
-		
-		<a href="#seven" onclick="coldAdd();" class="w3-btn w3-black"> YES </a>
-		
-		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-black"> NO </a>
-		
-	</div>
-	
-</div>
-
 <!--This codes for a page in which the user can click the results button to recieve the answer to cold or allergies. -->
 	
 <div class="page" id="seven">
