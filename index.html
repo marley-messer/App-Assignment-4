@@ -40,20 +40,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function brokenAdd(){
             broken_count = broken_count + 1;
-		alert(broken_count)
 
         }
 
         function notAdd(){
             not_count = not_count + 1;
-		alert(not_count)
-	
+		
+
         }
+		
 	var brokenPercent=0;
 	var notPercent=0;
 	function results() {
-		var brokenPercent= broken_count /6 *100;
-		var notPercent= not_count /6 *100;
+		var brokenPercent= broken_count + "/6";
+		var notPercent= not_count + "/6";
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "%<br> Probability it is not broken =" + notPercent;
 	
@@ -183,7 +183,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--this is the code for an calculating the function results-->
 	<div id="content" class="w3-container">
 		<p>Click for results.</p>
-		<a href="#six" onclick="results();" class="w3-btn w3-black"> MY RESULTS </a>
+		<a href="#six" onclick="results();" class="w3-btn w3-black"> GET MY RESULTS </a>
 	
 	</div>
 
