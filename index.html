@@ -33,7 +33,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> 
 
 <!-- The following is what is used to create the function that relates the answers to whether or not the user has a broken bone-->
-	<script>
+<script>
         var broken_count = 0;
         var not_count = 0;
 	
@@ -51,13 +51,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var brokenPercent=0;
 	var notPercent=0;
 	function results() {
-		var allergyPercent= broken_count/ (broken_count + not_count) * 100;
-		var coldPercent= cold_count/ (broken_count + not_count) * 100";
+		var brokenPercent= broken_count/ (broken_count + not_count) * 100;
+		var notPercent= not_count/ (broken_count + not_count) * 100;
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "%<br> Probability it is a not=" + notPercent;
+		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "%<br> Probability it is noy=" + notPercent;
 	
 	}
 	</script>
+
 
 <!--This sets up the layout of the app and creates how it is displayed -->
 
@@ -182,7 +183,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--this is the code for an calculating the function results-->
 	<div id="content" class="w3-container">
 		<p>Click for results.</p>
-		<a href="#six" onclick="results();" class="w3-btn w3-black">  GET MY RESULTS </a>
+		<a href="#six" onclick="results();" class="w3-btn w3-black"> MY RESULTS </a>
 	
 	</div>
 
