@@ -34,28 +34,27 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!-- The following is what is used to create the function that relates the answers to whether or not the user has a broken bone-->
 	<script>
-        var broken_bone = 0;
-        var not_broken = 0;
+        var broken_count = 0;
+        var not_count = 0;
 	
 
         function brokenAdd(){
             broken_count = broken_count + 1;
+		
 
         }
 
         function notAdd(){
             not_count = not_count + 1;
-		
-
+	
         }
-		
 	var brokenPercent=0;
 	var notPercent=0;
 	function results() {
-		var brokenPercent= broken_count + "/6";
-		var notPercent= not_count + "/6";
+		var allergyPercent= broken_count/ (broken_count + not_count) * 100;
+		var coldPercent= cold_count/ (broken_count + not_count) * 100";
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "%<br> Probability it is not broken =" + notPercent;
+		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "%<br> Probability it is a not=" + notPercent;
 	
 	}
 	</script>
